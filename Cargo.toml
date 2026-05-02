@@ -1,10 +1,10 @@
 [package]
-name = "mtop"
+name = "mutop"
 version = "0.2.0"
 edition = "2021"
 
 [[bin]]
-name = "mtop"
+name = "mutop"
 path = "src/main.rs"
 
 [dependencies]

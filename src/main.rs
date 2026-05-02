@@ -349,7 +349,7 @@ fn render_header(frame: &mut Frame, area: ratatui::layout::Rect, app: &App) {
     let title = Line::from(vec![
         Span::styled("◆ ", Style::default().fg(ORANGE)),
         Span::styled(
-            "MTOP",
+            "MUTOP",
             Style::default()
                 .fg(ORANGE_LIGHT)
                 .add_modifier(Modifier::BOLD),
