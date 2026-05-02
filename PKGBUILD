@@ -1,14 +1,14 @@
-# Maintainer: Your Name
+# Maintainer: MulpinKR <mulpin@archlinux>
 pkgname=amber-tasks
 pkgver=0.1.0
 pkgrel=1
-pkgdesc="A beautiful orange-themed TUI task manager"
+pkgdesc="A beautiful orange-themed TUI process manager"
 arch=('x86_64' 'aarch64')
-url="https://github.com/yourusername/amber-tasks"
+url="https://github.com/MulpinKR/amber-tasks"
 license=('MIT')
 depends=('gcc-libs')
-makedepends=('rust' 'cargo')
-source=("task-manager-$pkgver.tar.gz::https://github.com/yourusername/amber-tasks/archive/refs/tags/v$pkgver.tar.gz")
+makedepends=('rust' 'cargo' 'git')
+source=("amber-tasks-$pkgver.tar.gz::https://github.com/MulpinKR/amber-tasks/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 build() {
