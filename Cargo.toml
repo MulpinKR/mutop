@@ -1,7 +1,11 @@
 [package]
-name = "amber-tasks"
-version = "0.1.0"
+name = "mtop"
+version = "0.2.0"
 edition = "2021"
+
+[[bin]]
+name = "mtop"
+path = "src/main.rs"
 
 [dependencies]
 ratatui = "0.29"

@@ -1,0 +1,16 @@
+pkgbase = amber-tasks
+	pkgdesc = A beautiful orange-themed TUI process manager
+	pkgver = 0.1.0
+	pkgrel = 1
+	url = https://github.com/MulpinKR/amber-tasks
+	arch = x86_64
+	arch = aarch64
+	license = MIT
+	makedepends = rust
+	makedepends = cargo
+	makedepends = git
+	depends = gcc-libs
+	source = amber-tasks-0.1.0.tar.gz::https://github.com/MulpinKR/amber-tasks/archive/refs/tags/v0.1.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = amber-tasks

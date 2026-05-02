@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=mtop
+Comment=A beautiful orange-themed TUI process manager
+Exec=mtop
+Terminal=true
+Type=Application
+Categories=Utility;System;Monitor;
+Icon=utilities-terminal

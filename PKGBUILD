@@ -1,22 +1,25 @@
-# Maintainer: MulpinKR <mulpin@archlinux>
-pkgname=amber-tasks
-pkgver=0.1.0
+# Maintainer: Mulpin <mulpin@aur.archlinux.org>
+pkgname=mtop
+pkgver=0.2.0
 pkgrel=1
-pkgdesc="A beautiful orange-themed TUI process manager"
+pkgdesc="A beautiful orange-themed TUI process manager (btop alternative in Rust)"
 arch=('x86_64' 'aarch64')
-url="https://github.com/MulpinKR/amber-tasks"
+url="https://github.com/MulpinKR/mtop"
 license=('MIT')
 depends=('gcc-libs')
 makedepends=('rust' 'cargo' 'git')
-source=("amber-tasks-$pkgver.tar.gz::https://github.com/MulpinKR/amber-tasks/archive/refs/tags/v$pkgver.tar.gz")
+conflicts=('amber-tasks')
+provides=('mtop')
+source=("mtop-$pkgver.tar.gz::https://github.com/MulpinKR/mtop/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 build() {
-  cd "amber-tasks-$pkgver"
+  cd "mtop-$pkgver"
   cargo build --release --locked
 }
 
 package() {
-  cd "amber-tasks-$pkgver"
-  install -Dm755 "target/release/amber-tasks" "$pkgdir/usr/bin/amber-tasks"
+  cd "mtop-$pkgver"
+  install -Dm755 "target/release/mtop" "$pkgdir/usr/bin/mtop"
+  install -Dm644 "mtop.desktop" "$pkgdir/usr/share/applications/mtop.desktop"
 }

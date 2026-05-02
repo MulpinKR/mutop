@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Amber Tasks
-Comment=A beautiful orange-themed TUI task manager
-Exec=amber-tasks
-Terminal=true
-Type=Application
-Categories=Utility;
-Icon=utilities-terminal
